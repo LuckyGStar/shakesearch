@@ -1,7 +1,7 @@
 const Controller = {
   search: (ev) => {
     ev.preventDefault();
-    const form = document.getElementById("form");
+    const form = document.querySelector('.search .search__form');
     const data = Object.fromEntries(new FormData(form));
     const response = fetch(`/search?q=${data.query}`).then((response) => {
       response.json().then((results) => {
@@ -11,14 +11,14 @@ const Controller = {
   },
 
   updateTable: (results) => {
-    const table = document.getElementById("table-body");
+    const table = document.querySelector('.table .table__body');
     const rows = [];
     for (let result of results) {
-      rows.push(`<tr>${result}<tr/>`);
+      rows.push(`<tr class="table__body--row"><td><p>${result}</p></td><tr/>`);
     }
     table.innerHTML = rows;
   },
 };
 
-const form = document.getElementById("form");
+const form = document.querySelector('.search .search__form');
 form.addEventListener("submit", Controller.search);
