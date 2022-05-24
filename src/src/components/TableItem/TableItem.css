@@ -1,0 +1,7 @@
+.table .table__body .table__body--row p {
+  padding: 20px;
+  box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);
+  border-radius: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+}

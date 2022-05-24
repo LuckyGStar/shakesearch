@@ -1,0 +1,75 @@
+.search {
+  background: rgb(0,134,255);
+  background: linear-gradient(90deg, rgba(0,134,255,1) 35%, rgba(0,196,250,1) 100%);
+  margin: 30px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);
+}
+
+.search::before {
+  content: "";
+  background-image: url('https://i.ibb.co/6YSWn18/bk.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.search .search__form {
+  width: 100%;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.search .search__form label {
+  font-weight: 600;
+  font-size: 50px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+}
+
+.search .search__form input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  height: 65px;
+  padding-left:20px;
+  padding-right: 130px;
+  font-size: 16px;
+  box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);
+}
+
+.search .search__form input:focus {
+  outline: none;
+}
+
+.search .search__form button {
+  background-color: #0086FF;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.search .search__form--body {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0.5rem 1rem 0 rgb(44 51 73 / 10%);
+}
